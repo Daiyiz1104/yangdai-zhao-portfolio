@@ -1,0 +1,213 @@
+[
+  {
+    "slug": "illustration",
+    "title": "Illustration",
+    "cn": "个人插画",
+    "images": [
+      {
+        "src": "assets/personal-moon.jpg",
+        "title": "A Song for the Long Night",
+        "letterbox": true,
+        "portrait": false
+      },
+      {
+        "src": "assets/personal-red.jpg",
+        "title": "The Road She Dreamed",
+        "portrait": false
+      },
+      {
+        "src": "assets/personal-light.jpg",
+        "title": "The World in Her Palm",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/personal-portrait.jpg",
+        "title": "All Who Were Gone",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/personal-warrior.jpg",
+        "title": "Blade Against Destiny",
+        "standalone": true,
+        "portrait": true
+      }
+    ],
+    "cover": "assets/illustration-cover-original.jpg"
+  },
+  {
+    "slug": "character-design",
+    "title": "Costume & Character Design",
+    "cn": "服装与角色设计",
+    "images": [
+      {
+        "src": "assets/guihong-cover.jpg",
+        "title": "归鸿引 · Costume concept · Player Character Skin Design",
+        "portrait": false
+      },
+      {
+        "src": "assets/guihong-design.jpg",
+        "title": "归鸿引 · Costume concept · Player Character Skin Design",
+        "portrait": false
+      },
+      {
+        "src": "assets/white-haired-cover.jpg",
+        "title": "鸣泽引 · Costume concept · Boss Skin Design",
+        "portrait": false
+      },
+      {
+        "src": "assets/white-haired-design.jpg",
+        "title": "鸣泽引 · Costume concept · Boss Skin Design",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/costume-preview-v2.svg"
+  },
+  {
+    "slug": "traditional",
+    "title": "Traditional Media",
+    "cn": "传统绘画",
+    "images": [
+      {
+        "src": "assets/self-portrait.svg",
+        "title": "Self-Portrait",
+        "course": "Composition & Painting · Midterm",
+        "medium": "Oil paint",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/traditional-art-11.png",
+        "title": "Thumbelina’s Garden",
+        "course": "Sketching for Illustration",
+        "medium": "Acrylic gouache & Photoshop",
+        "portrait": false
+      },
+      {
+        "src": "assets/traditional-art-12.png",
+        "title": "A Moment to Remember",
+        "course": "Sketching for Illustration",
+        "medium": "Acrylic gouache & Photoshop",
+        "portrait": false
+      },
+      {
+        "src": "assets/traditional-art-13.png",
+        "title": "Hero Tree",
+        "course": "Sketching for Illustration",
+        "medium": "Acrylic gouache & Photoshop",
+        "portrait": false
+      },
+      {
+        "src": "assets/seated-figure-original.jpg",
+        "title": "Seated Figure Study",
+        "medium": "Oil on canvas",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/standing-figure.svg",
+        "title": "Standing Figure Study",
+        "medium": "Oil on canvas",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/reclining-figure-studio.jpg",
+        "title": "Reclining Figure Study",
+        "medium": "Oil on canvas",
+        "standalone": true,
+        "portrait": true
+      }
+    ],
+    "cover": "assets/traditional-art-11.png"
+  },
+  {
+    "slug": "sketchbook",
+    "title": "Sketchbook",
+    "cn": "素描与习作",
+    "images": [
+      {
+        "src": "assets/the-empress.jpg",
+        "title": "The Empress",
+        "course": "Analytical Figure Drawing · Final",
+        "medium": "Digital",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/the-hanged-man.jpg",
+        "title": "The Hanged Man Reversed",
+        "course": "Analytical Figure Drawing · Final",
+        "medium": "Digital",
+        "standalone": true,
+        "portrait": true
+      },
+      {
+        "src": "assets/treehouse-original.jpg",
+        "title": "Interior Treehouse",
+        "course": "Creative Perspective",
+        "medium": "Pencil",
+        "portrait": false
+      },
+      {
+        "src": "assets/midway-original.jpg",
+        "title": "Midway Funzone",
+        "course": "Creative Perspective",
+        "medium": "Pencil",
+        "portrait": false
+      },
+      {
+        "src": "assets/station-original.jpg",
+        "title": "Train Station",
+        "course": "Creative Perspective",
+        "medium": "Pencil",
+        "portrait": false
+      },
+      {
+        "src": "assets/stage-1.jpg",
+        "title": "Stage 1",
+        "course": "Creative Perspective",
+        "paired": true,
+        "portrait": false
+      },
+      {
+        "src": "assets/stage-2.jpg",
+        "title": "Stage 2",
+        "course": "Creative Perspective",
+        "paired": true,
+        "portrait": false
+      },
+      {
+        "src": "assets/cafe-three-originals.svg",
+        "title": "Café Exterior · Interior",
+        "course": "Creative Perspective",
+        "medium": "Pencil",
+        "portrait": false
+      },
+      {
+        "src": "assets/gesture-three-originals.svg",
+        "title": "3-Minute Sketches",
+        "medium": "Pencil",
+        "portrait": false,
+        "course": "Action Analyst"
+      },
+      {
+        "src": "assets/sketch-study-0.png",
+        "title": "Five-Minute Figure Sketch",
+        "medium": "Pencil",
+        "portrait": false,
+        "paired": true
+      },
+      {
+        "src": "assets/cinematic-value-original.png",
+        "title": "Cinematic Value Studies",
+        "course": "Creative Perspective",
+        "medium": "Digital",
+        "portrait": false,
+        "paired": true
+      }
+    ],
+    "cover": "assets/sketchbook-preview-v2.svg"
+  }
+]
