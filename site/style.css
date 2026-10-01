@@ -43,5 +43,6 @@
 
 .art-loading{display:block;width:100%;padding:14px;border:1px solid #444;background:#252525;color:#bbb;font-size:14px}.art-loading[hidden]{display:none}.art-loading:not(:disabled){cursor:pointer;color:#ffb6a9}
 
-/* Slightly narrower standalone personal artwork; grouped and professional work retain their size. */
-.series .art-grid>figure.single-art{width:92%;justify-self:center}
+/* Align every artwork row to the same centered gallery width. */
+.series .art-grid{width:92%;margin-inline:auto}
+.series .art-grid>figure.single-art{width:100%;justify-self:stretch}
