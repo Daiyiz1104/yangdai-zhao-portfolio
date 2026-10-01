@@ -46,3 +46,10 @@
 /* Align every artwork row to the same centered gallery width. */
 .series .art-grid{width:92%;margin-inline:auto}
 .series .art-grid>figure.single-art{width:100%;justify-self:stretch}
+
+/* Shorter panoramic home cover, framed around the face. */
+.home-hero{height:min(38vw,68svh);min-height:300px;max-height:760px}
+.hero-scene{inset:-2%;background-position:center 30%;animation:hero-banner-drift 16s ease-in-out infinite alternate}
+@keyframes hero-banner-drift{from{scale:1;translate:-.3% 0}to{scale:1.025;translate:.3% -.2%}}
+@media(max-width:650px){.home-hero{height:48svh;min-height:300px;max-height:430px}.hero-scene{background-position:28% 30%}.scroll-cue{bottom:18px}}
+@media(prefers-reduced-motion:reduce){.hero-scene{animation:none}}
