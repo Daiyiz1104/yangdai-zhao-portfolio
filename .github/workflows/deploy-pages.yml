@@ -18,10 +18,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Restore original encrypted artwork
-        run: |
-          cat protected-parts/*.part > site/protected.bin
-          sha256sum --check protected.sha256
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

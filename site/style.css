@@ -40,3 +40,5 @@
 
 
 .lock input.password-invalid{border-color:#ff7979;outline-color:#ff7979;animation:password-shake .32s ease-in-out}.lock .error{color:#ff7979}@keyframes password-shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}@media(prefers-reduced-motion:reduce){.lock input.password-invalid{animation:none}}
+
+.art-loading{display:block;width:100%;padding:14px;border:1px solid #444;background:#252525;color:#bbb;font-size:14px}.art-loading[hidden]{display:none}.art-loading:not(:disabled){cursor:pointer;color:#ffb6a9}
