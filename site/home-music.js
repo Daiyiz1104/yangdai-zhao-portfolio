@@ -9,6 +9,8 @@ button.hidden = true;
 button.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 18V5l11-2v13M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="17" cy="16" rx="3" ry="2.5"/><path class="music-slash" d="M3 3l18 18"/></svg>';
 document.body.append(button);
 let onHome = false;
+let firstHomeVisit = true;
+try { firstHomeVisit = sessionStorage.getItem('home-music-visited') !== 'yes'; } catch {}
 function update() {
   const playing = !audio.paused;
   const label = playing ? 'Pause music / 关闭音乐' : 'Play music / 播放音乐';
@@ -32,4 +34,9 @@ export function setHomeMusic(isHome) {
   button.hidden = !isHome;
   if (!isHome) audio.pause();
   update();
+  if (isHome && firstHomeVisit) {
+    firstHomeVisit = false;
+    try { sessionStorage.setItem('home-music-visited', 'yes'); } catch {}
+    audio.play().then(() => { if (!onHome) audio.pause(); }).catch(() => update());
+  }
 }
