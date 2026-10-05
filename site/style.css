@@ -53,3 +53,12 @@
 @keyframes hero-banner-drift{from{scale:1;translate:-.3% 0}to{scale:1.025;translate:.3% -.2%}}
 @media(max-width:650px){.home-hero{height:48svh;min-height:300px;max-height:430px}.hero-scene{background-position:28% 30%}.scroll-cue{bottom:18px}}
 @media(prefers-reduced-motion:reduce){.hero-scene{animation:none}}
+
+/* Home-only music control. Audio starts only after a visitor clicks. */
+.home-music{position:fixed;right:24px;bottom:24px;z-index:20;width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid #ffffff40;border-radius:50%;background:#202020df;color:#dcd7cd;cursor:pointer;box-shadow:0 2px 12px #0003}
+.home-music[hidden]{display:none}
+.home-music:hover,.home-music:focus-visible{color:#fff;border-color:#ddd}
+.home-music:focus-visible{outline:2px solid #dcd7cd;outline-offset:4px}
+.home-music.is-playing .music-slash{display:none}
+.home-music[aria-busy="true"]{opacity:.6}
+@media(max-width:650px){.home-music{right:16px;bottom:calc(16px + env(safe-area-inset-bottom))}}
