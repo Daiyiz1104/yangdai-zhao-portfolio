@@ -54,7 +54,7 @@
 @media(max-width:650px){.home-hero{height:48svh;min-height:300px;max-height:430px}.hero-scene{background-position:28% 30%}.scroll-cue{bottom:18px}}
 @media(prefers-reduced-motion:reduce){.hero-scene{animation:none}}
 
-/* Home-only music control. First-visit autoplay with a manual playback toggle. */
+/* Site-wide looping music with a manual playback toggle. */
 .home-music{position:fixed;right:24px;bottom:24px;z-index:20;width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid #ffffff40;border-radius:50%;background:#202020df;color:#dcd7cd;cursor:pointer;box-shadow:0 2px 12px #0003}
 .home-music[hidden]{display:none}
 .home-music:hover,.home-music:focus-visible{color:#fff;border-color:#ddd}
