@@ -14,12 +14,7 @@ async function decrypt(bytes, key) {
   return crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.slice(0,12)},key,bytes.slice(12));
 }
 export async function unlockGallery(password) {
-  const bytes = await preloadIndex();
-  const material = await crypto.subtle.importKey('raw',new TextEncoder().encode(password),'PBKDF2',false,['deriveKey']);
-  const passwordKey = await crypto.subtle.deriveKey({name:'PBKDF2',salt:bytes.slice(0,16),iterations:600000,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,['decrypt']);
-  let decoded;
-  try { decoded = await decrypt(bytes.slice(16),passwordKey); } catch { throw Error('password'); }
-  const manifest=JSON.parse(new TextDecoder().decode(decoded));
+  const manifest=JSON.parse(new TextDecoder().decode(await fetchBytes(new URL('public-index.json',base))));
   const key=await crypto.subtle.importKey('raw',Uint8Array.from(atob(manifest.contentKey),c=>c.charCodeAt(0)),{name:'AES-GCM'},false,['decrypt']);
   let stopped=false,observer;
   const controller=new AbortController(),urls=[],pending=new Map();
